@@ -10,14 +10,17 @@ body{
   color:#fff;
   background:#000;
   overflow-x:hidden;
+  position:relative;
+  z-index:0;
 }
 
 /* FIXED BACKGROUND LAYER */
 .bg{
   position:fixed;
   inset:0;
-  background:url("https://rh74896.github.io/obsidianhr2/site2/system/city_vertical.gif") center top / cover no-repeat;
+  background:url("https://rh74896.github.io/obsidianhr2/site2/system/city_vertical.gif") center/cover no-repeat;
   z-index:-1;
+  pointer-events:none;
 }
 
 /* NAV */
