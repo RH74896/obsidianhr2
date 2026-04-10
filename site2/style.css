@@ -1,0 +1,29 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#000 url("https://rh74896.github.io/obsidianhr2/site2/images/city_vertical.gif") center/cover fixed;
+  color:#fff;
+}
+.nav{background:#000c;padding:15px;text-align:center}
+.nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold}
+.container{max-width:1100px;margin:auto;padding:20px}
+.card{
+  background:rgba(0,120,255,0.35);
+  backdrop-filter:blur(6px);
+  padding:20px;border-radius:12px;margin:20px 0;
+}
+.links a{display:flex;align-items:center;margin:10px 0;color:#fff;text-decoration:none}
+.links img{width:32px;margin-right:10px}
+.gallery{display:flex;overflow-x:auto;gap:10px}
+.gallery img{height:160px;border-radius:8px;cursor:pointer}
+.fullscreen{position:fixed;inset:0;background:#000d;display:none;align-items:center;justify-content:center}
+.fullscreen img{max-width:90%;max-height:90%}
+.table{width:100%;border-collapse:collapse}
+.table td,.table th{padding:10px;border-bottom:1px solid #fff3}
+.badge{padding:6px 10px;border-radius:6px;display:inline-block;margin:5px}
+.green{background:#2ecc71}
+.red{background:#e74c3c}
+.yellow{background:#f1c40f;color:#000}
+.channel-youtube{background:#ff0000}
+.channel-vk{background:#2787f5}
+.channel-trovo{background:#19d66b}
