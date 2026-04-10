@@ -1,10 +1,7 @@
-Исправленный `style.css` (без дублей и без поломок):
-
-```css
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:#000 url("https://rh74896.github.io/obsidianhr2/site2/images/city_vertical.gif") center/cover fixed;
+  background:#000 url("https://rh74896.github.io/obsidianhr2/site2/images/city_vertical.gif") center/cover fixed no-repeat;
   color:#fff;
 }
 
@@ -138,4 +135,3 @@ body{
   width:24px;
 }
 }
-```
