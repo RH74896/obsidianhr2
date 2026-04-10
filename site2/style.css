@@ -1,9 +1,14 @@
+@font-face{
+  font-family:"BitCell";
+  src:url("system/2nd_BitCell-Regular.otf") format("opentype");
+}
+
 body{
   margin:0;
-  font-family:Arial, sans-serif;
+  font-family:"BitCell", Arial, sans-serif;
   color:#fff;
   background-color:#000;
-  background-image:url("https://rh74896.github.io/obsidianhr2/site2/images/city_vertical.gif");
+  background-image:url("https://rh74896.github.io/obsidianhr2/site2/system/city_vertical.gif");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center;
