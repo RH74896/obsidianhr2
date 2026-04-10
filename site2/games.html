@@ -1,18 +1,35 @@
-<div class="container card center">
-  <div id="games"></div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nav">
+<a href="index.html">Главная</a>
+<a href="project.html">Фан-игра</a>
+<a href="streams.html">Стримы</a>
+<a href="games.html">Игры</a>
 </div>
+
+<div class="container card center" id="games"></div>
 
 <script>
 fetch("games.json")
 .then(r=>r.json())
 .then(data=>{
-  const el=document.getElementById("games");
-  el.innerHTML=data.map(g=>`
+  document.getElementById("games").innerHTML =
+  data.map(g=>`
     <div class="badge ${g.status}">
-      <a href="${g.stream}">🎮</a>
-      <a href="${g.download}">⬇️</a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" width="18"></a>
+      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" width="18"></a>
       ${g.name}
     </div>
   `).join("");
 });
 </script>
+
+</body>
+</html>
