@@ -1,8 +1,13 @@
 body{
   margin:0;
   font-family:Arial, sans-serif;
-  background:#000 url("https://rh74896.github.io/obsidianhr2/site2/images/city_vertical.gif") center/cover fixed no-repeat;
   color:#fff;
+  background-color:#000;
+  background-image:url("https://rh74896.github.io/obsidianhr2/site2/images/city_vertical.gif");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
 }
 
 .nav{
