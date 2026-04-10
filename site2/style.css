@@ -105,11 +105,10 @@ body{
 }
 
 .badge{
-  padding:6px 10px;
-  border-radius:6px;
   display:block;
-  margin:8px 0;
-  text-align:center;
+  margin:8px auto;
+  text-align:left;
+  max-width:600px;
 }
 
 .green{background:#2ecc71}
@@ -147,4 +146,9 @@ body{
 .links img{
   width:24px;
 }
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
 }
