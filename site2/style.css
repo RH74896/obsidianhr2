@@ -107,8 +107,9 @@ body{
 .badge{
   display:block;
   margin:8px auto;
-  text-align:left;
   max-width:600px;
+  padding:8px 10px;
+  text-align:left;
 }
 
 .green{background:#2ecc71}
