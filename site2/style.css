@@ -3,6 +3,7 @@
   src:url("system/2F_MachinaOrto-Medium.ttf") format("truetype");
 }
 
+/* BASE */
 body{
   margin:0;
   font-family:"BitCell", Arial, sans-serif;
@@ -10,22 +11,28 @@ body{
   color:#fff;
   background:#000;
   overflow-x:hidden;
-  position:relative;
-  z-index:0;
 }
 
-/* FIXED BACKGROUND LAYER */
+/* BACKGROUND */
 .bg{
   position:fixed;
   inset:0;
   background:url("https://rh74896.github.io/obsidianhr2/site2/system/city_vertical.gif") center/cover no-repeat;
-  z-index:-1;
+  z-index:0;
   pointer-events:none;
+}
+
+/* CONTENT LAYER */
+.nav,
+.container,
+.card{
+  position:relative;
+  z-index:1;
 }
 
 /* NAV */
 .nav{
-  background:#000c;
+  background:rgba(0,0,0,0.75);
   padding:12px;
   text-align:center;
 }
@@ -95,10 +102,11 @@ body{
 .fullscreen{
   position:fixed;
   inset:0;
-  background:#000d;
+  background:rgba(0,0,0,0.85);
   display:none;
   align-items:center;
   justify-content:center;
+  z-index:10;
 }
 
 .fullscreen img{
@@ -113,9 +121,10 @@ body{
   font-size:15px;
 }
 
-.table td,.table th{
+.table td,
+.table th{
   padding:10px;
-  border-bottom:1px solid #fff3;
+  border-bottom:1px solid rgba(255,255,255,0.2);
 }
 
 /* BADGE */
@@ -125,49 +134,50 @@ body{
   max-width:600px;
   padding:8px 10px;
   text-align:left;
+  border-radius:6px;
 }
 
 /* COLORS */
-.green{background:#2ecc71}
-.red{background:#e74c3c}
-.yellow{background:#f1c40f;color:#000}
+.green{background:#2ecc71;}
+.red{background:#e74c3c;}
+.yellow{background:#f1c40f;color:#000;}
 
-.channel-youtube{background:#ff0000}
-.channel-vk{background:#2787f5}
-.channel-trovo{background:#19d66b}
+.channel-youtube{background:#ff0000;}
+.channel-vk{background:#2787f5;}
+.channel-trovo{background:#19d66b;}
+
+/* GLOBAL LINKS */
+a{
+  text-decoration:none;
+  color:inherit;
+}
 
 /* MOBILE */
 @media (max-width:700px){
 
-.nav a{
-  display:block;
-  margin:8px 0;
-}
+  .nav a{
+    display:block;
+    margin:8px 0;
+  }
 
-.container{
-  padding:10px;
-}
+  .container{
+    padding:10px;
+  }
 
-.card{
-  padding:14px;
-  border-radius:10px;
-}
+  .card{
+    padding:14px;
+    border-radius:10px;
+  }
 
-.gallery img{
-  height:120px;
-}
+  .gallery img{
+    height:120px;
+  }
 
-.table{
-  font-size:13px;
-}
+  .table{
+    font-size:13px;
+  }
 
-.links img{
-  width:24px;
-}
-}
-
-/* LINKS GLOBAL */
-a{
-  text-decoration:none;
-  color:inherit;
+  .links img{
+    width:24px;
+  }
 }
