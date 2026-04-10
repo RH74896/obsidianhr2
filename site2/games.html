@@ -23,8 +23,12 @@ fetch("games.json")
   document.getElementById("games").innerHTML =
   data.map(g=>`
     <div class="badge ${g.status}">
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" width="18"></a>
-      <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" width="18"></a>
+      <a href="${g.stream}" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/727/727245.png" width="18">
+      </a>
+      <a href="${g.download}" target="_blank" download>
+        <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" width="18">
+      </a>
       ${g.name}
     </div>
   `).join("");
