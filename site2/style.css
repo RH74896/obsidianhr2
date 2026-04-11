@@ -18,9 +18,16 @@ body{
 .bg{
   position:fixed;
   inset:0;
-  background:url("https://rh74896.github.io/obsidianhr2/site2/system/city_vertical.gif") center/cover no-repeat;
-  z-index:0;
+  background:url("https://rh74896.github.io/obsidianhr2/site2/system/city_vertical.gif") repeat-x;
+  background-size:cover;
+  animation:scrollBg 60s linear infinite;
   pointer-events:none;
+  z-index:-1;
+}
+
+@keyframes scrollBg{
+  from{background-position:0 0;}
+  to{background-position:-1280px 0;}
 }
 
 /* CONTENT LAYER */
