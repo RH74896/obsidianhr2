@@ -20,7 +20,7 @@ body{
   inset:0;
   background:url("https://rh74896.github.io/obsidianhr2/site2/system/city_vertical.gif") repeat-x;
   background-size:cover;
-  animation:scrollBg 60s linear infinite;
+  animation: scrollBg 240s linear infinite;
   pointer-events:none;
   z-index:0;
 }
