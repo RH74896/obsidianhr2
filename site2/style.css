@@ -38,12 +38,9 @@ body{
   z-index:1;
 }
 
-/* NAV */
 .nav{
-  position:fixed;
+  position:sticky;
   top:0;
-  left:0;
-  width:100%;
   z-index:1000;
 
   background:rgba(0,0,0,0.75);
