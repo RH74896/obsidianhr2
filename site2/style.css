@@ -30,7 +30,7 @@ body{
   to{background-position:-1280px 0;}
 }
 
-/* CONTENT LAYER */
+/* LAYERS */
 .nav,
 .container,
 .card{
@@ -43,28 +43,26 @@ body{
   position:sticky;
   top:0;
   z-index:1000;
-
   background:rgba(0,0,0,0.75);
   padding:12px;
   text-align:center;
 }
 
-/* LINKS (desktop) */
+/* DESKTOP MENU */
 .menu-links{
   display:flex;
   gap:10px;
   justify-content:center;
 }
 
-.nav a{
+.menu-links a{
   color:#fff;
-  margin:0 10px;
   text-decoration:none;
   font-weight:bold;
   display:inline-block;
 }
 
-/* MENU BUTTON */
+/* MOBILE BUTTON */
 .menu-toggle{
   display:none;
   cursor:pointer;
