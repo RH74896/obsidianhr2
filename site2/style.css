@@ -22,7 +22,7 @@ body{
   background-size:cover;
   animation:scrollBg 60s linear infinite;
   pointer-events:none;
-  z-index:-1;
+  z-index:0;
 }
 
 @keyframes scrollBg{
