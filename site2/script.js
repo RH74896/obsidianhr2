@@ -1,28 +1,36 @@
-document.addEventListener("DOMContentLoaded", () => {
+function openImg(src){
+  const fs = document.getElementById("fs");
+  if(!fs) return;
+  fs.style.display = "flex";
+  fs.querySelector("img").src = src;
+}
 
-  function openImg(src){
-    const fs = document.getElementById("fs");
-    fs.style.display = "flex";
-    fs.querySelector("img").src = src;
-  }
+function closeImg(){
+  const fs = document.getElementById("fs");
+  if(!fs) return;
+  fs.style.display = "none";
+}
 
-  function closeImg(){
-    document.getElementById("fs").style.display = "none";
-  }
+function toggleMenu(){
+  const menu = document.getElementById("menu");
+  if(menu) menu.classList.toggle("open");
+}
 
-  function toggleMenu(){
-    document.getElementById("menu").classList.toggle("open");
-  }
+function initMenu(){
+  const menu = document.getElementById("menu");
+  if(!menu) return;
 
-  document.querySelectorAll(".menu-links a").forEach(a=>{
+  menu.querySelectorAll("a").forEach(a=>{
     a.addEventListener("click", ()=>{
-      document.getElementById("menu").classList.remove("open");
+      menu.classList.remove("open");
     });
   });
+}
 
-  // чтобы функции были доступны из HTML onclick
-  window.openImg = openImg;
-  window.closeImg = closeImg;
-  window.toggleMenu = toggleMenu;
-
+const observer = new MutationObserver(()=>{
+  if(document.getElementById("menu")){
+    initMenu();
+  }
 });
+
+observer.observe(document.body, {childList:true, subtree:true});

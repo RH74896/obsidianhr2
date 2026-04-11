@@ -1,5 +1,4 @@
 <div class="nav">
-
   <div class="menu-toggle" onclick="toggleMenu()">☰ Меню</div>
 
   <div class="menu-links" id="menu">
@@ -8,5 +7,10 @@
     <a href="streams.html">Стримы</a>
     <a href="games.html">Игры</a>
   </div>
-
 </div>
+
+<script>
+function toggleMenu(){
+  document.getElementById("menu").classList.toggle("open");
+}
+</script>
